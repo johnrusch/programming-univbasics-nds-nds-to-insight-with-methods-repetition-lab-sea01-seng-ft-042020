@@ -58,7 +58,10 @@ def total_gross(source)
   row_index = 0 
   while row_index < 
   director_totals.size do 
-    total += 
+    total += director_totals[:director_list[row_index]]
+    row_index += 1 
+  end
+  total
     
   
 end
